@@ -1,12 +1,18 @@
 <div id="wrapper">
   <div id="columns">
-  <% @items.each do |item| %>
+    <% @items.each do |item| %>
     <div class="pin">
-      <img src="<%= item.image_url %>" />
+      <img class="modal-trigger" href="#<%= item.title %>"src="<%= item.image_url %>" />
       <p>
         <%= item.description %>
       </p>
     </div>
+    <div id="<%= item.title %>" class="modal">
+      <div class="modal-content">
+      <img style="width: 100%; height: 100%;"src="<%= item.image_url %>" />
+      </div>
+    </div>
     <% end %>
   </div>
+
 </div>
