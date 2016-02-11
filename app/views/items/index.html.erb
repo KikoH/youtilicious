@@ -1,0 +1,12 @@
+<div id="wrapper">
+  <div id="columns">
+  <% @items.each do |item| %>
+    <div class="pin">
+      <img src="<%= item.image_url %>" />
+      <p>
+        <%= item.descripton %>
+      </p>
+    </div>
+    <% end %>
+  </div>
+</div>

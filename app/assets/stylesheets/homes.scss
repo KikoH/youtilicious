@@ -38,6 +38,11 @@ body > img {
 	margin: 300px 100px;
 }
 
+.col img{
+	width: 100%;
+	border: 1px solid black;
+}
+
 .front {
 	position: relative;
 	z-index: 1000;
