@@ -1,0 +1,49 @@
+body, html {
+	height: 100%;
+	font-family: 'Indie Flower', GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+body > img {
+}
+
+.parallax-container{
+	height: 95vh;
+	margin: auto;
+	z-index: -1;
+}
+
+#samples {
+	background-image: url('http://3.bp.blogspot.com/-BAbhVCqMi3o/T7eGYTh-iXI/AAAAAAAADFA/5tyBNITkKaA/s1600/RosePolkaPaper2.png');
+	background-size: cover;
+}
+
+.image-fixed {
+	position: fixed;
+}
+
+.samples-container {
+	height: 94vh;
+	min-height: 620px;
+}
+
+.samples-p {
+	margin: 300px 100px;
+	padding: 0;
+	float: left;
+	width: 350px;
+}
+
+.samples-button {
+	float: right;
+	margin: 300px 100px;
+}
+
+.front {
+	position: relative;
+	z-index: 1000;
+}
+
+.active {
+	background: #ea4a4f;
+	border: 1px solid #ea4a4f;
+}
