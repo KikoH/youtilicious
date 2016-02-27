@@ -1,4 +1,6 @@
-//= require jquery
+//= require jquery.min
 //= require jquery_ujs
 //= require materialize-sprockets
 //= require homes
+//= require jquery.cubeportfolio.min
+//= require cube-portfolio
