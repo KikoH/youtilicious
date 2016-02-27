@@ -1,1 +1,13 @@
-<%= @item.title %>
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="<%= @item.image_url %>"></a>
+    <a class="carousel-item" href="#two!"><img src="<%= @item.image_url %>"></a>
+    <a class="carousel-item" href="#three!"><img src="<%= @item.image_url %>"></a>
+    <a class="carousel-item" href="#four!"><img src="<%= @item.image_url %>"></a>
+    <a class="carousel-item" href="#five!"><img src="<%= @item.image_url %>"></a>
+ </div>
+
+ <div class="container center">
+ <h2><%= @item.title %></h2>
+ 	<p><%= @item.description %></p>
+ 	<p>Price: <%= @item.price %></p>
+ </div>
