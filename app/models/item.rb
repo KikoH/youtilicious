@@ -1,5 +1,7 @@
 class Item < ActiveRecord::Base
-	mount_uploader :image, ItemUploader
+	has_many :images, dependent: :destroy
+	accepts_nested_attributes_for :images, :allow_destroy => true
+	mount_uploader :main_image, ItemUploader
 
 	def wedding_category?
 		category === "weddings"

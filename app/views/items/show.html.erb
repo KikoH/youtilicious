@@ -1,13 +1,11 @@
 <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="<%= @item.image_url %>"></a>
-    <a class="carousel-item" href="#two!"><img src="<%= @item.image_url %>"></a>
-    <a class="carousel-item" href="#three!"><img src="<%= @item.image_url %>"></a>
-    <a class="carousel-item" href="#four!"><img src="<%= @item.image_url %>"></a>
-    <a class="carousel-item" href="#five!"><img src="<%= @item.image_url %>"></a>
- </div>
+<% @item.images.each_with_index do |image, index| %>
+	<a class="carousel-item" href="#<%= index %>!"><img src="<%= image.image_url %>"></a>
+	<% end %>
+</div>
 
- <div class="container center">
- <h2><%= @item.title %></h2>
- 	<p><%= @item.description %></p>
- 	<p>Price: <%= @item.price %></p>
- </div>
+<div class="container center">
+	<h2><%= @item.title %></h2>
+	<p><%= @item.description %></p>
+	<p>Price: <%= @item.price %></p>
+</div>
