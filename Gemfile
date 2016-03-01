@@ -39,6 +39,7 @@ gem "mini_magick"
 
 gem 'figaro'
 gem 'thin'
+gem 'fog'
 
 
 #Active admin
