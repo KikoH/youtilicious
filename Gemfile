@@ -37,7 +37,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'carrierwave'
 gem "mini_magick"
 
-
+gem 'figaro'
 gem 'thin'
 
 
