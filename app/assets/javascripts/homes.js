@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('.modal-trigger').leanModal();
 	$('.carousel').carousel();
 	$('.button-collapse').sideNav();
+	$('.scrollspy').scrollSpy();
 
 	$('.navbar-fixed li a').click(function(e){
 		e.preventDefault();
