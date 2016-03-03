@@ -14,6 +14,13 @@ body, html {
 	min-width: 0; 
 }
 
+@media screen and (max-width: 1024px) {
+	#aboutme {
+		.parallax img {
+			width: 55%;
+		}
+	}
+}
 .modal {
 	max-height: 85%;
 	width: 50%;
@@ -62,35 +69,35 @@ body, html {
 	transform: translateY(-50%);
 	font-size: 24px;
 
-}*/
+	}*/
 
-.samples-button-container {
-	width: 100%;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	margin: 0;
-}
+	.samples-button-container {
+		width: 100%;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0;
+	}
 
-.image-fixed {
-	position: fixed;
-}
-.col img{
-	width: 100%;
-}
+	.image-fixed {
+		position: fixed;
+	}
+	.col img{
+		width: 100%;
+	}
 
-.front {
-	position: relative;
-	z-index: 1000;
-}
+	.front {
+		position: relative;
+		z-index: 1000;
+	}
 
-.active {
-	background: #ea4a4f;
-	border: 1px solid #ea4a4f;
-}
+	.active {
+		background: #ea4a4f;
+		border: 1px solid #ea4a4f;
+	}
 
-#contactme {
-	height: 50vh;
-	text-align: center;
-	color: #ee6e73;
-}
+	#contactme {
+		height: 50vh;
+		text-align: center;
+		color: #ee6e73;
+	}
