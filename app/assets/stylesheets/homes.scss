@@ -11,14 +11,30 @@ body, html {
 
 .parallax img {
 	min-height: 0;
-	min-width: 0; 
+	min-width: 0;
 }
+
+.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
 
 @media screen and (max-width: 1024px) {
 	#aboutme {
 		.parallax img {
-			width: 55%;
+			width: 50%;
 		}
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
 	}
 }
 .modal {
@@ -28,33 +44,19 @@ body, html {
 
 #samples {
 	position: relative;
-	height: 94vh;
 }
-
-.samples-container:before {
-	content: '';
-	background-image: url('https://s3.amazonaws.com/youtilicious/collagenew.jpg');
-	background-size: cover;
-	/*-webkit-filter: blur(4px);
-	-moz-filter: blur(4px);
-	-o-filter: blur(4px);
-	-ms-filter: blur(4px);
-	filter: blur(4px);*/
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	display: block;
-	height: 100%;
-}
-
 
 .samples-container {
 	z-index: 0;
-	height: 94vh;
 	min-height: 620px;
 	text-align: center;
+
+	img {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 /*.samples-p-conatiner {
@@ -73,7 +75,7 @@ body, html {
 
 	.samples-button-container {
 		width: 100%;
-		position: relative;
+		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 		margin: 0;
