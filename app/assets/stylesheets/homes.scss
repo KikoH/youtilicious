@@ -29,6 +29,10 @@ body, html {
 		}
 	}
 
+	#samples {
+		height: 400px;
+	}
+
 	/*.mobile {
 		display: block;
 	}
@@ -44,16 +48,14 @@ body, html {
 
 #samples {
 	position: relative;
-	height: 94vh;
+	height: 800px;
 }
 
 .samples-container {
+	height: 100%;
 	background-image: url("https://s3.amazonaws.com/youtilicious/collagenew.jpg");
 	background-size: cover;
-	z-index: 0;
-	min-height: 620px;
 	text-align: center;
-	height: 100%;
 }
 
 /*img {
