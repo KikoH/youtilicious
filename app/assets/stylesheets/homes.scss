@@ -14,33 +14,6 @@ body, html {
 	min-width: 0;
 }
 
-/*.mobile {
-		display: none;
-	}
-
-	.desktop {
-		display: block;
-	}*/
-
-@media screen and (max-width: 1024px) {
-	#aboutme {
-		.parallax img {
-			width: 50%;
-		}
-	}
-
-	#samples {
-		height: 400px;
-	}
-
-	/*.mobile {
-		display: block;
-	}
-
-	.desktop {
-		display: none;
-	}*/
-}
 .modal {
 	max-height: 85%;
 	width: 50%;
@@ -60,54 +33,48 @@ body, html {
 	text-align: center;
 }
 
-/*img {
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}*/
-
-/*.samples-p-conatiner {
-	height: 100%;
-	float: left;
-	width: 50%;
-}
-
-.samples-p {
-	position: relative;
+.samples-button-container {
+	width: 100%;
+	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 24px;
+	margin: 0;
+}
 
-	}*/
+.image-fixed {
+	position: fixed;
+}
+.col img{
+	width: 100%;
+}
 
-	.samples-button-container {
-		width: 100%;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		margin: 0;
+.front {
+	position: relative;
+	z-index: 1000;
+}
+
+.active {
+	background: #ea4a4f;
+	border: 1px solid #ea4a4f;
+}
+
+#contactme {
+	height: 50vh;
+	text-align: center;
+	color: #ee6e73;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1024px) {
+	#aboutme {
+		.parallax img {
+			width: 50%;
+		}
 	}
 
-	.image-fixed {
-		position: fixed;
+	#samples {
+		height: 400px;
 	}
-	.col img{
-		width: 100%;
-	}
-
-	.front {
-		position: relative;
-		z-index: 1000;
-	}
-
-	.active {
-		background: #ea4a4f;
-		border: 1px solid #ea4a4f;
-	}
-
-	#contactme {
-		height: 50vh;
-		text-align: center;
-		color: #ee6e73;
-	}
+}
