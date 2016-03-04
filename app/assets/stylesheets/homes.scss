@@ -1,7 +1,7 @@
 body, html {
 	height: 100%;
 	font-family: 'Poiret One', GillSans, Calibri, Trebuchet, sans-serif;
-}
+	font-size: 14px}
 
 .parallax-container{
 	height: 95vh;
@@ -58,13 +58,8 @@ body, html {
 	border: 1px solid #ea4a4f;
 }
 
-#contactme {
-	height: 50vh;
-	text-align: center;
-	color: #ee6e73;
-}
 
-.third {
+.parallax-image-section {
 	height: 100%;
 	background-image: url("https://s3.amazonaws.com/youtilicious/uta.jpg");
 	background-position: center;
@@ -73,6 +68,11 @@ body, html {
 	text-align: center;
 }
 
+#contactme {
+	height: 50vh;
+	text-align: center;
+	color: #ee6e73;
+}
 
 /* RESPONSIVE DESIGN */
 
@@ -85,5 +85,18 @@ body, html {
 
 	#samples {
 		height: 400px;
+	}
+
+	h1 {
+		font-size: 2em;
+		margin: 1rem;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+	h5 {
+		font-size: 0.7em;
 	}
 }
