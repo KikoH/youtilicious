@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+#Ruby
+ruby "2.3.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use postgresql as the database for Active Record
@@ -33,6 +34,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'rails_12factor'
 
 gem 'carrierwave'
 gem "mini_magick"
