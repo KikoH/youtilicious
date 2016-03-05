@@ -9,9 +9,10 @@ body, html {
 	z-index: -1;
 }
 
-.parallax img {
+.parallax .aboutme-img {
 	min-height: 0;
 	min-width: 0;
+	width: 25%	;
 }
 
 .modal {
@@ -74,6 +75,10 @@ body, html {
 	height: 50vh;
 	text-align: center;
 	color: #ee6e73;
+}
+
+.social-logo {
+	margin: 2%;
 }
 
 /* RESPONSIVE DESIGN */
