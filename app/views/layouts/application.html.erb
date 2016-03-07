@@ -16,13 +16,15 @@
 		<nav>
 			<div class="nav-wrapper">
 				<%= link_to 'Youtilicious SO DELICIOUS', root_path, class: 'brand-logo' %>
+				<% if current_page?(root_path) %>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">=</i></a>
-				<ul class="right hide-on-med-and-down">
+				<ul class="side-nav" id="mobile-demo">
 					<li><a href="#aboutme">About me</a></li>
 					<li><a href="#samples">Work</a></li>
 					<li><a href="#contactme">Contact me</a></li>
 				</ul>
-				<ul class="side-nav" id="mobile-demo">
+				<% end %>
+				<ul class="right hide-on-med-and-down">
 					<li><a href="#aboutme">About me</a></li>
 					<li><a href="#samples">Work</a></li>
 					<li><a href="#contactme">Contact me</a></li>
