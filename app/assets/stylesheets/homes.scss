@@ -22,7 +22,7 @@ body, html {
 
 #samples {
 	position: relative;
-	height: 800px;
+	height: 94vh;
 }
 
 .samples-container {
@@ -83,15 +83,11 @@ body, html {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 740px) {
 	#aboutme {
 		.parallax img {
 			width: 50%;
 		}
-	}
-
-	#samples {
-		height: 600px;
 	}
 
 	h1 {
