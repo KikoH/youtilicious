@@ -5,8 +5,8 @@
       <li class="tab col s3"><a href="#weddings">Weddings</a></li>
       <li class="tab col s3"><a href="#birthdays">Birthdays</a></li>
       <li class="tab col s3"><a href="#custom">Custom</a></li>
-  </ul>
-</div>
+    </ul>
+  </div>
 </div>
 
 
@@ -18,83 +18,83 @@
         <img class="modal-trigger" href="#all_items<%= index %>" src="<%= item.main_image_url %>" />
         <p>
           <%= item.description %>
-      </p>
-  </div>
-  <div id="all_items<%= index %>" class="modal">
-    <div class="modal-content">
-       <a href="<%= item_path(item) %>"> <img src="<%= item.main_image_url %>" /> </a>
+        </p>
+      </div>
+      <div id="all_items<%= index %>" class="modal">
+        <div class="modal-content">
+         <a href="<%= item_path(item) %>"> <img src="<%= item.main_image_url %>" /> </a>
+       </div>
+     </div>
+     <% end %>
    </div>
-</div>
-<% end %>
-</div>
-</div>
+ </div>
 </div>
 
 <div id="weddings" class="col s12">
   <div id="wrapper">
     <div id="columns">
-       <% @items.each do |item| %>
-       <% if item.wedding_category? %>
-       <div class="pin">
-          <img class="modal-trigger" href="#wedding" src="<%= item.main_image_url %>" />
-          <p>
-            <%= item.description %>
-        </p>
+     <% @items.each do |item| %>
+     <% if item.wedding_category? %>
+     <div class="pin">
+      <img class="modal-trigger" href="#wedding" src="<%= item.main_image_url %>" />
+      <p>
+        <%= item.description %>
+      </p>
     </div>
     <div id="wedding" class="modal">
       <div class="modal-content">
         <a href="<%= item_path(item) %>"> <img style="width: 100%; height: 100%;"src="<%= item.main_image_url %>" /> </a>
+      </div>
     </div>
-</div>
-<% end %>
-<% end %>
-</div>
+    <% end %>
+    <% end %>
+  </div>
 </div>
 </div>
 
 
 <div id="birthdays" class="col s12">
-<div id="wrapper">
-      <div id="columns">
-         <% @items.each do |item| %>
-           <% if item.birthday_category? %>
-             <div class="pin">
-               <img class="modal-trigger" href="#<%= item.title %>"src="<%= item.main_image_url %>" />
-                 <p>
-                   <%= item.description %>
-                </p>
-             </div>
-        <div id="<%= item.title %>" class="modal">
-          <div class="modal-content">
-            <a href="<%= item_path(item) %>"> <img style="width: 100%; height: 100%;"src="<%= item.main_image_url %>" /> </a>
-          </div>
-        </div>
-          <% end %>
-        <% end %>
+  <div id="wrapper">
+    <div id="columns">
+     <% @items.each do |item| %>
+     <% if item.birthday_category? %>
+     <div class="pin">
+       <%= image_tag("#{item.main_image_url}", class: "modal-trigger", href: "##{item.category}#{item.id}") %>
+       <p>
+         <%= item.description %>
+       </p>
+     </div>
+     <div id="<%= item.category %><%= item.id %>" class="modal">
+      <div class="modal-content">
+        <a href="<%= item_path(item) %>"> <img style="width: 100%; height: 100%;"src="<%= item.main_image_url %>" /> </a>
       </div>
+    </div>
+    <% end %>
+    <% end %>
   </div>
+</div>
 </div>
 
 <div id="custom" class="col s12">
-   <div id="wrapper">
-      <div id="columns">
-         <% @items.each do |item| %>
-           <% if item.custom_category? %>
-             <div class="pin">
-               <img class="modal-trigger" href="#<%= item.title %>"src="<%= item.main_image_url %>" />
-                 <p>
-                   <%= item.description %>
-                </p>
-             </div>
-        <div id="<%= item.title %>" class="modal">
-          <div class="modal-content">
-            <a href="<%= item_path(item) %>"> <img style="width: 100%; height: 100%;"src="<%= item.main_image_url %>" /> </a>
-          </div>
-        </div>
-          <% end %>
-        <% end %>
-      </div>
+ <div id="wrapper">
+  <div id="columns">
+   <% @items.each do |item| %>
+   <% if item.custom_category? %>
+   <div class="pin">
+     <img class="modal-trigger" href="#<%= item.title %>"src="<%= item.main_image_url %>" />
+     <p>
+       <%= item.description %>
+     </p>
+   </div>
+   <div id="<%= item.title %>" class="modal">
+    <div class="modal-content">
+      <a href="<%= item_path(item) %>"> <img style="width: 100%; height: 100%;"src="<%= item.main_image_url %>" /> </a>
+    </div>
   </div>
+  <% end %>
+  <% end %>
+</div>
+</div>
 </div>
 
 
