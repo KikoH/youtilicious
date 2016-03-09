@@ -1,105 +1,116 @@
 body, html {
 	height: 100%;
 	font-family: 'Poiret One', GillSans, Calibri, Trebuchet, sans-serif;
-	font-size: 14px}
-
-.parallax-container{
-	height: 95vh;
-	margin: auto;
-	z-index: -1;
+	font-size: 14px
 }
 
-.parallax .aboutme-img {
-	min-height: 0;
-	min-width: 0;
-	width: 25%;
+.intro-text {
+	font-size: 7vw;
 }
 
-.modal {
-	max-height: 85%;
-	width: 50%;
-}
+	.parallax-container{
+		height: 95vh;
+		margin: auto;
+		z-index: -1;
+	}
 
-#samples {
-	position: relative;
-	height: 94vh;
-}
+	.parallax .aboutme-img {
+		min-height: 0;
+		min-width: 0;
+		width: 25%;
+	}
 
-.samples-container {
-	height: 100%;
-	background-image: url("https://s3.amazonaws.com/youtilicious/collagenew.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	text-align: center;
-}
+	.modal {
+		max-height: 85%;
+		width: 50%;
+	}
 
-.samples-button-container {
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	margin: 0;
-}
+	#samples {
+		position: relative;
+		height: 94vh;
+	}
 
-.image-fixed {
-	position: fixed;
-}
-.col img{
-	width: 100%;
-}
+	.samples-container {
+		height: 100%;
+		background-image: url("https://s3.amazonaws.com/youtilicious/collagenew.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		text-align: center;
+	}
 
-.front {
-	position: relative;
-	z-index: 1000;
-}
+	.center-container {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0;
+		text-align: center;
+	}
 
-.active {
-	background: #ea4a4f;
-	border: 1px solid #ea4a4f;
-}
+	.image-fixed {
+		position: fixed;
+	}
+	.col img{
+		width: 100%;
+	}
+
+	.front {
+		position: relative;
+		z-index: 1000;
+	}
+
+	.active {
+		background: #ea4a4f;
+		border: 1px solid #ea4a4f;
+	}
 
 
-.parallax-image-section {
-	height: 100%;
-	background-image: url("https://s3.amazonaws.com/youtilicious/uta.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	text-align: center;
-}
+	.parallax-image-section {
+		height: 100%;
+		background-image: url("https://s3.amazonaws.com/youtilicious/uta.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		text-align: center;
+		-webkit-filter: blur(4px);
+		-moz-filter: blur(4px);
+		-o-filter: blur(4px);
+		-ms-filter: blur(4px);
+		filter: blur(4px);
+	}
 
-#contactme {
-	height: 50vh;
-	text-align: center;
-	color: #ee6e73;
-}
+	#contactme {
+		height: 50vh;
+		text-align: center;
+		color: #ee6e73;
+	}
 
-.social-logo {
-	margin: 2%;
-}
+	.social-logo {
+		margin: 2%;
+	}
 
-/* RESPONSIVE DESIGN */
+	/* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 740px) {
-	#aboutme {
-		.parallax img {
-			width: 50%;
+	@media screen and (max-width: 740px) {
+		#aboutme {
+			.parallax img {
+				width: 50%;
+			}
+		}
+
+		h1 {
+			font-size: 2em;
+			margin: 1rem;
+		}
+
+		h4 {
+			font-size: 1em;
+		}
+
+		h5 {
+			font-size: 0.7em;
 		}
 	}
-
-	h1 {
-		font-size: 2em;
-		margin: 1rem;
-	}
-
-	h4 {
-		font-size: 1em;
-	}
-
-	h5 {
-		font-size: 0.7em;
-	}
-}
