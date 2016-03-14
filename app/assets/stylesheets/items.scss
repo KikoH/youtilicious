@@ -76,6 +76,10 @@
 		padding: 5px;
 	}
 
+	#columns:hover .pin:not(:hover) {
+		opacity: 1;
+	}
+
 }
 
 #columns:hover .pin:not(:hover) {
