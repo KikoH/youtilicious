@@ -4,7 +4,7 @@
       <li class="tab col s3"><a href="#all">All</a></li>
       <li class="tab col s3"><a href="#weddings">Weddings</a></li>
       <li class="tab col s3"><a href="#birthdays">Birthdays</a></li>
-      <li class="tab col s3"><a href="#custom">Custom</a></li>
+      <li class="tab col s3"><a href="#special">Special Ocassions</a></li>
     </ul>
   </div>
 </div>
@@ -76,11 +76,11 @@
 </div>
 </div>
 
-<div id="custom" class="col s12">
+<div id="special" class="col s12">
  <div id="wrapper">
   <div id="columns">
    <% @items.each do |item| %>
-   <% if item.custom_category? %>
+   <% if item.special_category? %>
    <div class="pin">
      <img class="modal-trigger" href="#<%= item.title %>"src="<%= item.main_image_url %>" />
      <p>

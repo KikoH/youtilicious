@@ -11,7 +11,7 @@ class Item < ActiveRecord::Base
 		category === "birthdays"
 	end
 
-	def custom_category?
-		category === "custom"
+	def special_category?
+		category === "special"
 	end
 end

@@ -7,7 +7,7 @@ ActiveAdmin.register Item do
 			f.input :title
 			f.input :description
 			f.input :price
-			f.input :category, :label => 'Category', :as => :select, :collection => ['weddings', 'birthdays', 'custom']
+			f.input :category, :label => 'Category', :as => :select, :collection => ['weddings', 'birthdays', 'special']
 			f.input :main_image, :hint => image_tag(f.object.main_image.url(:thumb))
 		end
 
