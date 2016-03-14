@@ -35,7 +35,7 @@ nav {
 
 #samples {
 	position: relative;
-	height: 94vh;
+	height: 95vh;
 }
 
 .fixed-container {
@@ -114,6 +114,10 @@ nav {
 		.parallax img {
 			width: 50%;
 		}
+	}
+
+	#samples {
+		min-height: 600px;
 	}
 
 	.samples-container {
