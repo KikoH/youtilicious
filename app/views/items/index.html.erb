@@ -37,12 +37,12 @@
      <% @items.each do |item| %>
      <% if item.wedding_category? %>
      <div class="pin">
-      <img class="modal-trigger" href="#wedding" src="<%= item.main_image_url %>" />
+      <img class="modal-trigger" href="##{item.category}#{item.id}" src="<%= item.main_image_url %>" />
       <p>
         <%= item.description %>
       </p>
     </div>
-    <div id="wedding" class="modal">
+    <div id="##{item.category}#{item.id}" class="modal">
       <div class="modal-content">
         <a href="<%= item_path(item) %>"> <img style="width: 100%; height: 100%;"src="<%= item.main_image_url %>" /> </a>
       </div>
