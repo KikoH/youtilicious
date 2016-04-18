@@ -42,7 +42,7 @@ gem 'rails_12factor'
 
 gem 'carrierwave'
 gem "mini_magick"
-
+gem 'puma'
 gem 'figaro'
 gem 'fog'
 
