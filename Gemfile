@@ -32,6 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+# File Validator
+gem 'file_validators'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -41,7 +44,6 @@ gem 'carrierwave'
 gem "mini_magick"
 
 gem 'figaro'
-gem 'thin'
 gem 'fog'
 
 

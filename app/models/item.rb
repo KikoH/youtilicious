@@ -3,6 +3,8 @@ class Item < ActiveRecord::Base
 	accepts_nested_attributes_for :images, :allow_destroy => true
 	mount_uploader :main_image, ItemUploader
 
+	validates :main_image, file_size: { less_than_or_equal_to: 0.5.megabytes.to_i }
+
 	def wedding_category?
 		category === "weddings"
 	end
