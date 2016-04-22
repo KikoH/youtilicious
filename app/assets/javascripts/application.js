@@ -4,3 +4,4 @@
 //= require homes
 //= require jquery.cubeportfolio.min
 //= require cube-portfolio
+//= require active_admin
