@@ -6,5 +6,6 @@ CarrierWave.configure do |config|
     :aws_secret_access_key  => ENV["AWS_SECRET_KEY"],        # required
     :region                 => 'us-east-1'
   }
+  #config.asset_host = 'd3w1xupb5k7gcl.cloudfront.net'
   config.fog_directory  = ENV["AWS_BUCKET"]                 # required
 end
