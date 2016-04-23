@@ -10,11 +10,15 @@ class ItemUploader < CarrierWave::Uploader::Base
   #storage :file
   storage :fog
 
+  def store_dir
+    ENV["AWS_BUCKET"]
+  end
+
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
-  def cache_dir
-    "#{Rails.root}/tmp/uploads"
-  end
+  # def cache_dir
+  #   "#{Rails.root}/tmp"
+  # end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
