@@ -11,7 +11,6 @@ class ItemUploader < CarrierWave::Uploader::Base
   storage :fog
 
   def store_dir
-    ENV["AWS_BUCKET"]
   end
 
   # Override the directory where uploaded files will be stored.
