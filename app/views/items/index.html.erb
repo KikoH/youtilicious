@@ -37,7 +37,7 @@
      <% @items.each do |item| %>
      <% if item.wedding_category? %>
      <div class="pin">
-     <%= image_tag("#{item.main_image_url}", class: "modal-trigger", href: "##{item.category}#{item.id}") %>
+     <%= image_tag(item.main_image_url, class: "modal-trigger", href: "##{item.category}#{item.id}") %>
       <p>
         <%= item.description %>
       </p>
@@ -60,7 +60,7 @@
      <% @items.each do |item| %>
      <% if item.birthday_category? %>
      <div class="pin">
-       <%= image_tag("#{item.main_image_url}", class: "modal-trigger", href: "##{item.category}#{item.id}") %>
+       <%= image_tag(item.main_image_url, class: "modal-trigger", href: "##{item.category}#{item.id}") %>
        <p>
          <%= item.description %>
        </p>
@@ -82,7 +82,7 @@
    <% @items.each do |item| %>
    <% if item.special_category? %>
    <div class="pin">
-    <%= image_tag("#{item.main_image_url}", class: "modal-trigger", href: "##{item.category}#{item.id}") %>
+    <%= image_tag(item.main_image_url, class: "modal-trigger", href: "##{item.category}#{item.id}") %>
     <p>
      <%= item.description %>
    </p>
