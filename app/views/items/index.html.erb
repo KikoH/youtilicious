@@ -15,7 +15,8 @@
     <div id="columns">
       <% @items.each_with_index do |item, index| %>
       <div class="pin">
-      <%= image_tag(item.main_image, class: "modal-trigger test") %>
+      <%#= image_tag(item.main_image, class: "modal-trigger test") %>
+       <img class="modal-trigger" href="#all_items<%= index %>" src="<%= item.main_image_url %>" />
         <h4 class="center" style=""> <%= link_to(item.title, item_path(item)) %> </h4>
         <p>
           <%= item.description %>
